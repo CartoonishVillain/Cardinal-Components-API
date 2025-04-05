@@ -17,7 +17,7 @@
       "parent": {
         "id": "cardinal-components",
         "name": "Cardinal Components API",
-        "description": "Attaching more data to various game objects",
+        "description": "Attaching more data to various game objects. THIS IS A FORK, AND A RELATIVELY BAD ONE AT THAT. PLEASE DO NOT BOTHER THE ORIGINAL DEVELOPERS WITH ANY ISSUES, AS THEY'RE PROBABLY MY FAULT - MARI",
         "badges": [ "library" ]
       }
     }
@@ -44,9 +44,8 @@
     "Pyrofab"
   ],
   "contact": {
-    "homepage": "https://minecraft.curseforge.com/projects/318449",
-    "issues": "https://github.com/Ladysnake/Cardinal-Components-API/issues",
-    "sources": "https://github.com/Ladysnake/Cardinal-Components-API"
+    "issues": "https://github.com/CartoonishVillain/Cardinal-Components-API/issues",
+    "sources": "https://github.com/CartoonishVillain/Cardinal-Components-API"
   },
   "license": "MIT",
   "mixins": [
