@@ -210,7 +210,7 @@ public abstract class ComponentKey<C extends Component> {
                 } else {
                     if (predicate.isRequiredOnClient()) {
                         String specificMod = FabricLoader.getInstance().getModContainer(this.id.getNamespace()).map(c -> c.getMetadata().getName() + " and ").orElse("");
-                        player.networkHandler.disconnect(Text.literal(
+                        player.networkHandler.method_69157(Text.literal(
                             "This server requires " + specificMod + "Cardinal Components API " +
                                 "(unhandled packet: " + payload.getId().id() + ")" +
                                 ComponentsInternals.getClientOptionalModAdvice()));

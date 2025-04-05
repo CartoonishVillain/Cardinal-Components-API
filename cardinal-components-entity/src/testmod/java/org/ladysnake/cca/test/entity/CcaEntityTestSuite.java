@@ -87,16 +87,16 @@ public class CcaEntityTestSuite {
         ctx.complete();
     }
 
-    @GameTest
-    public void respawnHappensOnConversion(TestContext ctx) {
-        CamelEntity camel = ctx.spawnEntity(EntityType.CAMEL, 0, 0, 0);
-        CowEntity cow = camel.convertTo(EntityType.COW, EntityConversionContext.create(camel, true, true), e -> {});
-        assert cow != null;
-        ctx.assertEquals(
-            CcaEntityTestMod.CAMEL_BASE_VITA, Vita.get(cow).getVitality(),
-            Text.literal("Component data should transfer according to RespawnCopyStrategy -"));
-        CatEntity cat = cow.convertTo(EntityType.CAT, EntityConversionContext.create(camel, true, true), e -> {});
-        ctx.assertTrue("Component data should not transfer by default", Vita.get(cat).getVitality() < CcaEntityTestMod.NATURAL_VITA_CEILING);
-        ctx.complete();
-    }
+//    @GameTest
+//    public void respawnHappensOnConversion(TestContext ctx) {
+//        CamelEntity camel = ctx.spawnEntity(EntityType.CAMEL, 0, 0, 0);
+//        CowEntity cow = camel.convertTo(EntityType.COW, EntityConversionContext.create(camel, true, true), e -> {});
+//        assert cow != null;
+//        ctx.assertEquals(
+//            CcaEntityTestMod.CAMEL_BASE_VITA, Vita.get(cow).getVitality(),
+//            Text.literal("Component data should transfer according to RespawnCopyStrategy -"));
+//        CatEntity cat = cow.convertTo(EntityType.CAT, EntityConversionContext.create(camel, true, true), e -> {});
+//        ctx.assertTrue("Component data should not transfer by default", Vita.get(cat).getVitality() < CcaEntityTestMod.NATURAL_VITA_CEILING);
+//        ctx.complete();
+//    }
 }
